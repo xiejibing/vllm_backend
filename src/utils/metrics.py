@@ -230,7 +230,7 @@ class VllmStatLogger(VllmStatLoggerBase):
             ),
             (
                 self.metrics.histogram_time_per_output_token,
-                stats.time_per_output_tokens_iter,
+                stats.inter_token_latencies_iter,
             ),
             (self.metrics.histogram_e2e_time_request, stats.time_e2e_requests),
             (
